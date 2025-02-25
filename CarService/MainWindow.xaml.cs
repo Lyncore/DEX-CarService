@@ -20,8 +20,6 @@ namespace CarService
         public MainWindow()
         {
             InitializeComponent();
-            User u = new() { Family = ""};
-
         }
     }
 }

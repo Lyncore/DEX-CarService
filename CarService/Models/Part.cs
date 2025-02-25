@@ -15,5 +15,12 @@ namespace CarService.Models
         public decimal Price { get; set; }
         public int ManufacturerId { get; set; } 
         public Manufacturer Manufacturer { get; set; }
+        public List<Request> Requests { get; set; }
+        public List<UsedPart> UsedParts { get; set; }
+
+
+
+
+        public List<PartRequest> PartRequests { get; set; }
     }
 }

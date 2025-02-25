@@ -23,8 +23,8 @@ namespace CarService.Models
         public DateTime? StartedAt { get; set; }
         public DateTime? CompletedAt { get; set; }
         public string? Message { get; set; }
-        public int? MechanicId { get; set; }
-        public User? Mechanic { get; set; }
         public byte? Rank { get; set; }
+        public List<Part> Parts { get; set; }
+       public List<UsedPart> UsedParts { get; set; }
     }
 }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CarService"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Frame Source="/Pages/USersPage.xaml">
 
-    </Grid>
+    </Frame>
 </Window>
