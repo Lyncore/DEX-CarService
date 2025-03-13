@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace CarService.Models
         public string Phone { get; set; }
         public string? Login { get; set; }
         public string Pass { get; set; }
-        public List<Request> Requests { get; set; } = [];
+        public List<Request> MasterRequests { get; set; } = [];
+        public List<Request> ClientRequests { get; set; } = [];
     }
 }

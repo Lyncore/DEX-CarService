@@ -27,7 +27,7 @@
                     <Button x:Name="LogoutBtn" Click="LogoutBtn_Click">Выход</Button>
                 </StackPanel>
             </Grid>
-            <Frame x:Name="MainFrame" Source="/Pages/RequestsPage.xaml">
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Source="/Pages/RequestsPage.xaml">
 
             </Frame>
         </DockPanel>

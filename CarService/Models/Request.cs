@@ -11,8 +11,10 @@ namespace CarService.Models
     internal class Request
     {
         public int Id { get; set; }
-        public int RequesterId { get; set; }
-        public User Requester { get; set; }
+        public int ClientId { get; set; }
+        public User Client { get; set; }
+        public int? MasterId { get; set; }
+        public User? Master { get; set; }
         public int CarId {  get; set; }
         public Car Car { get; set; }
         public string VIN { get; set; }

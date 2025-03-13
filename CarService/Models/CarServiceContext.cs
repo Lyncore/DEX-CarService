@@ -30,7 +30,6 @@ namespace CarService.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
             modelBuilder.Entity<Request>()
                 .HasMany(request => request.Parts)
                 .WithMany(part => part.Requests)
@@ -52,6 +51,16 @@ namespace CarService.Models
                     }
                 );
 
+            modelBuilder.Entity<Request>()
+                .HasOne(r => r.Client)
+                .WithMany()
+                .HasForeignKey(r => r.ClientId);
+
+            modelBuilder.Entity<Request>()
+                .HasOne(r => r.Master)
+                .WithMany()
+                .HasForeignKey(r => r.MasterId);
+               
             modelBuilder.Entity<User>().HasData(new User { 
                 Id = 1, 
                 Type = UserType.Manager,
@@ -59,7 +68,7 @@ namespace CarService.Models
                 Name = "Иван",
                 Patronymic = "иванович",
                 Phone =  "111222333",
-                Login = "ffasfas",
+                Login = "111",
                 Pass = "111"
             });
         }

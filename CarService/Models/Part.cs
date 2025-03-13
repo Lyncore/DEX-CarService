@@ -17,10 +17,6 @@ namespace CarService.Models
         public Manufacturer Manufacturer { get; set; }
         public List<Request> Requests { get; set; }
         public List<UsedPart> UsedParts { get; set; }
-
-
-
-
         public List<PartRequest> PartRequests { get; set; }
     }
 }
